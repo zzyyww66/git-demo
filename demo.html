@@ -6,30 +6,121 @@
     <title>我的第一个HTML页面</title>
     <style>
       body {
-        font-family: sans-serif;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
         line-height: 1.6;
-        margin: 20px;
-        background-color: #f4f4f4;
-        color: #333;
+        margin: 0; /* Reset default margin */
+        background-color: #f8f9fa; /* Light gray background */
+        color: #212529; /* Dark gray text color */
       }
       header {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 0;
+        background-color: #343a40; /* Dark gray header background */
+        color: #ffffff; /* White header text */
+        padding: 20px 0;
         text-align: center;
+      }
+      header h1 {
+        font-size: 2.5rem;
+        margin: 0; /* Remove default margin */
+        text-shadow: 1px 1px 2px #000; /* Subtle text shadow */
       }
       .container {
         width: 80%;
-        margin: auto;
+        margin: 30px auto; /* Centering with margin */
         overflow: hidden;
-        padding: 20px;
-        background-color: #fff;
+        padding: 30px;
+        background-color: #ffffff; /* White container background */
+        box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle box shadow */
+        border-radius: 8px; /* Rounded corners for container */
+      }
+      h2 {
+        font-size: 2rem;
+        color: #343a40; /* Heading color */
+      }
+      h3 {
+        font-size: 1.5rem;
+        color: #495057; /* Slightly lighter heading color */
+      }
+      p {
+        font-size: 1rem;
+        margin-bottom: 15px; /* Space below paragraphs */
+      }
+      ul {
+        margin-bottom: 15px;
+        padding-left: 20px; /* Indent list items */
+      }
+      li {
+        margin-bottom: 5px; /* Space between list items */
+      }
+      a {
+        color: #007bff; /* Blue link color */
+        text-decoration: none; /* Remove underline */
+      }
+      a:hover {
+        text-decoration: underline; /* Underline on hover */
+      }
+      img {
+        display: block; /* Center image */
+        margin: 20px auto; /* Space around image and centering */
+        max-width: 100%; /* Responsive image */
+        height: auto; /* Maintain aspect ratio */
+        border: 1px solid #ddd; /* Light border */
+        border-radius: 4px; /* Rounded corners for image */
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for image */
+      }
+      footer {
+        background-color: #343a40; /* Dark gray footer background */
+        color: #f8f9fa; /* Light gray footer text */
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 30px;
+        /* border-top: 1px solid #e9ecef; */ /* Optional top border */
+      }
+      footer p {
+        margin: 0; /* Reset default paragraph margin in footer */
+        font-size: 0.9rem;
+      }
+
+      /* Responsive adjustments for smaller screens */
+      @media (max-width: 768px) {
+        .container {
+          width: 95%;
+          padding: 20px;
+          margin: 20px auto;
+        }
+        header {
+          padding: 15px 0;
+        }
+        header h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1.75rem;
+        }
+        h3 {
+          font-size: 1.25rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+        ul {
+          padding-left: 15px; /* Slightly reduce padding for lists */
+        }
+        img {
+          margin: 15px auto; /* Reduce margin for image */
+        }
+        footer {
+          padding: 10px 0;
+          margin-top: 20px;
+        }
+        footer p {
+          font-size: 0.8rem;
+        }
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>11111欢迎来到我的网页！111111</h1>
+      <h1>欢迎来到我的网页！</h1> <!-- Removed extra numbers -->
     </header>
 
     <div class="container">
@@ -53,11 +144,11 @@
       </p>
 
       <img src="https://via.placeholder.com/150" alt="一个占位图片" />
-      <p>上面是一张占位符图片。</p>
+      <p style="text-align: center;">上面是一张占位符图片。</p> <!-- Centered text below image -->
     </div>
 
     <footer>
-      <p style="text-align: center; margin-top: 20px">© 2023 我的网页</p>
+      <p>© 2023 我的网页</p> <!-- Removed inline style from footer p, handled by footer p style -->
     </footer>
   </body>
 </html>
